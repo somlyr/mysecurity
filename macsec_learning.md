@@ -15,6 +15,7 @@ sudo ln -s /proc/${docker-pid-ns}/ns/net /var/run/netns/${docker-pid-ns}
 #### 容器网络
 ----
 *默认使用docker0网桥进行容器网络连接，也可以使用用户创建的网桥(包括ovs)进行连接*
+
 *网络模型 docker-nic(macsec-nic)<---->veth-B<---->veth-A<---->bridge(docker0)*
 
 * 创建veth pair
